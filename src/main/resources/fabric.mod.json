@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "grief-union-public",
+  "version": "1.0",
+  "name": "GriefUnionPublic",
+  "authors": [
+    "F_x"
+  ],
+  "contact": {},
+  "environment": "client",
+  "entrypoints": {
+    "meteor": [
+      "eu.mcfreedom.griefunionpublic.GriefUnionPublic"
+    ]
+  },
+  "mixins": [
+    "griefunionpublic.mixins.json"
+  ],
+  "depends": {
+    "java": ">=17",
+    "minecraft": ">=1.18",
+    "meteor-client": "*"
+  },
+  "custom": {
+    "meteor-client:color": "225,25,25"
+  }
+}

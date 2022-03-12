@@ -1,6 +1,7 @@
 package eu.mcfreedom.griefunionpublic;
 
 import eu.mcfreedom.griefunionpublic.commands.*;
+import eu.mcfreedom.griefunionpublic.modules.AllowParagraph;
 import eu.mcfreedom.griefunionpublic.modules.NoJumpCooldown;
 import meteordevelopment.meteorclient.MeteorClient;
 import meteordevelopment.meteorclient.addons.MeteorAddon;
@@ -19,10 +20,12 @@ public class GriefUnionPublic extends MeteorAddon {
         MeteorClient.EVENT_BUS.registerLambdaFactory("eu.mcfreedom.griefunionpublic", (lookupInMethod, klass) -> (MethodHandles.Lookup) lookupInMethod.invoke(null, klass, MethodHandles.lookup()));
 
         Modules.get().add(new NoJumpCooldown());
+        Modules.get().add(new AllowParagraph());
 
         Commands.get().add(new SpamCommand());
         Commands.get().add(new FakeChatCommand());
         Commands.get().add(new LagMessageCommand());
+        Commands.get().add(new HologramCommand());
     }
 
     @Override
