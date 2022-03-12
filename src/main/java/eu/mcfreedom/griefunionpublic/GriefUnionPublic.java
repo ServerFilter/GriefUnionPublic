@@ -1,7 +1,6 @@
 package eu.mcfreedom.griefunionpublic;
 
-import eu.mcfreedom.griefunionpublic.commands.FakeChatCommand;
-import eu.mcfreedom.griefunionpublic.commands.LagMessageCommand;
+import eu.mcfreedom.griefunionpublic.commands.*;
 import eu.mcfreedom.griefunionpublic.modules.NoJumpCooldown;
 import meteordevelopment.meteorclient.MeteorClient;
 import meteordevelopment.meteorclient.addons.MeteorAddon;
@@ -21,6 +20,7 @@ public class GriefUnionPublic extends MeteorAddon {
 
         Modules.get().add(new NoJumpCooldown());
 
+        Commands.get().add(new SpamCommand());
         Commands.get().add(new FakeChatCommand());
         Commands.get().add(new LagMessageCommand());
     }
