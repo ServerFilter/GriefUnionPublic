@@ -1,8 +1,7 @@
 package eu.mcfreedom.griefunionpublic;
 
-import eu.mcfreedom.griefunionpublic.commands.LagMessageCommand;
-import eu.mcfreedom.griefunionpublic.commands.SpamCommand;
 import eu.mcfreedom.griefunionpublic.commands.FakeChatCommand;
+import eu.mcfreedom.griefunionpublic.commands.LagMessageCommand;
 import eu.mcfreedom.griefunionpublic.modules.NoJumpCooldown;
 import meteordevelopment.meteorclient.MeteorClient;
 import meteordevelopment.meteorclient.addons.MeteorAddon;
