@@ -17,7 +17,7 @@ import static com.mojang.brigadier.Command.SINGLE_SUCCESS;
 
 // I should make this a module lol
 public class CommandBookCommand extends Command {
-    private final static SimpleCommandExceptionType NOT_IN_CREATIVE = new SimpleCommandExceptionType(new LiteralText("You must be in creative mode to use this."));
+    private static final SimpleCommandExceptionType NOT_IN_CREATIVE = new SimpleCommandExceptionType(new LiteralText("You must be in creative mode to use this."));
 
     public CommandBookCommand() {
         super("command-book", "Gives you a book with a click event.");

@@ -14,7 +14,7 @@ import net.minecraft.text.Text;
 import static com.mojang.brigadier.Command.SINGLE_SUCCESS;
 
 public class HologramCommand extends Command {
-    private final static SimpleCommandExceptionType NOT_IN_CREATIVE = new SimpleCommandExceptionType(new LiteralText("You must be in creative mode to use this."));
+    private static final SimpleCommandExceptionType NOT_IN_CREATIVE = new SimpleCommandExceptionType(new LiteralText("You must be in creative mode to use this."));
 
     public HologramCommand() {
         super("hologram", "Creates a hologram at your position.");

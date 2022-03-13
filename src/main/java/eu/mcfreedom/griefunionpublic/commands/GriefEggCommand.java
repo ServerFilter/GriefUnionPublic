@@ -15,7 +15,7 @@ import net.minecraft.text.LiteralText;
 import static com.mojang.brigadier.Command.SINGLE_SUCCESS;
 
 public class GriefEggCommand extends Command {
-    private final static SimpleCommandExceptionType NOT_IN_CREATIVE = new SimpleCommandExceptionType(new LiteralText("You must be in creative mode to use this."));
+    private static final SimpleCommandExceptionType NOT_IN_CREATIVE = new SimpleCommandExceptionType(new LiteralText("You must be in creative mode to use this."));
 
     public GriefEggCommand() {
         super("grief-egg", "Creates a fireball spawnegg with a huge power.");

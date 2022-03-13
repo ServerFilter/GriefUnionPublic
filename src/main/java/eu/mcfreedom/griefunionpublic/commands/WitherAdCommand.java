@@ -15,7 +15,7 @@ import net.minecraft.text.Text;
 import static com.mojang.brigadier.Command.SINGLE_SUCCESS;
 
 public class WitherAdCommand extends Command {
-    private final static SimpleCommandExceptionType NOT_IN_CREATIVE = new SimpleCommandExceptionType(new LiteralText("You must be in creative mode to use this."));
+    private static final SimpleCommandExceptionType NOT_IN_CREATIVE = new SimpleCommandExceptionType(new LiteralText("You must be in creative mode to use this."));
 
     public WitherAdCommand() {
         super("wither-ad", "Gives you a spawnegg of a wither with a custom name.");
